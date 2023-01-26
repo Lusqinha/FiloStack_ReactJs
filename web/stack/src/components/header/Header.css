@@ -1,0 +1,64 @@
+/* import firacode */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 0 1em;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.179);
+    height: 3.8em;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.8em;
+    font-family: 'Fira Code', monospace;
+    font-weight: lighter;
+    color: #EEEEEE;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding: 0.5em;
+    color: #ffff;
+}
+
+.search {
+    height: 1.5em;
+    padding: 0.5em;
+    color: #EEEEEE;
+    font-family: 'Fira Code', monospace;
+    font-weight: lighter;
+    font-size: 1em;
+    border: 1px solid #EEEEEE;
+    border-radius: 1.5em;
+    background-color: rgba(159, 208, 221, 0.27);
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search::placeholder {
+    color: rgba(250, 235, 215, 0.524);
+    font-family: 'Fira Code', monospace;
+    font-weight: lighter;
+    font-size: 1em;
+    padding-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+    .title {
+        display: none;
+    }
+    .search {
+        width: 80%;
+    }
+}
